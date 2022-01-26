@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego gato V 1.0</title>
+</head>
+
+<body>
+    <h1>Jose Alejandro Rodriguez Ramirez</h1>
+    <br>
+    <h1>Esta es la version 1 de mi juego del gato</h1>
+    <p>public class JuegoGato {</p>
+    <br>
+    <p>public static void main(String[] args) {<br /><br />Scanner sc= new Scanner(System.in);<br />int
+        gato[][];<br /><br />int x=0;<br />int y=0;<br />gato= new int [3][3];<br /><br />for (int i = 0; i &lt; 4; i++)
+        {<br />System.out.println("Jugador 1: &iquest;En qu&eacute; posicion de x quiere colocar?");<br />x=
+        sc.nextInt();<br />System.out.println("Jugador 1: &iquest;En qu&eacute; posicion de y quiere colocar?");<br />y=
+        sc.nextInt();<br />gato[x][y]= 1; <br />System.out.println("");<br /><br />for (int j = 0; j &lt; 1; j++)
+        {<br />System.out.println("Jugador 2: &iquest;En qu&eacute; posicion de x quiere colocar?");<br />x=
+        sc.nextInt();<br />System.out.println("Jugador 2: &iquest;En qu&eacute; posicion de y quiere colocar?");<br />y=
+        sc.nextInt();<br />gato[x][y]= 2;<br />}<br />}<br />System.out.println("Jugador 1: &iquest;En qu&eacute;
+        posicion de x quiere colocar?");<br />x= sc.nextInt();<br />System.out.println("Jugador 1: &iquest;En qu&eacute;
+        posicion de y quiere colocar?");<br />y= sc.nextInt();<br />gato[x][y]= 1;
+        <br /><br />System.out.println("");<br /><br />for (int i = 0; i &lt; 3; i++) {<br />for (int j = 0; j &lt; 3;
+        j++) {<br />System.out.print(gato[i][j]+" ");<br />}<br />System.out.println("");<br />}<br /><br />if
+        (gato[0][0]==1 &amp;&amp; gato[0][1]==1 &amp;&amp; gato[0][2]==1) {<br />System.out.println("EL JUGADOR 1 HA
+        GANADO");<br />}<br />else if (gato[1][0]==1 &amp;&amp; gato[1][1]==1 &amp;&amp; gato[1][2]==1)
+        {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />}<br />else if (gato[2][0]==1 &amp;&amp; gato[2][1]==1
+        &amp;&amp; gato[2][2]==1) {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />}<br />else if
+        (gato[0][0]==1 &amp;&amp; gato[1][0]==1 &amp;&amp; gato[2][0]==1) {<br />System.out.println("EL JUGADOR 1 HA
+        GANADO");<br />}<br />else if (gato[0][1]==1 &amp;&amp; gato[1][1]==1 &amp;&amp; gato[2][1]==1)
+        {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />}<br />else if (gato[0][2]==1 &amp;&amp; gato[1][2]==1
+        &amp;&amp; gato[2][2]==1) {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />}<br />else if
+        (gato[0][0]==1 &amp;&amp; gato[1][1]==1 &amp;&amp; gato[2][2]==1) {<br />System.out.println("EL JUGADOR 1 HA
+        GANADO");<br />}<br />else if (gato[0][2]==1 &amp;&amp; gato[1][1]==1 &amp;&amp; gato[2][0]==1)
+        {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />}<br /><br />else if (gato[0][0]==2 &amp;&amp;
+        gato[0][1]==2 &amp;&amp; gato[0][2]==2) {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />}<br />else if
+        (gato[1][0]==2 &amp;&amp; gato[1][1]==2 &amp;&amp; gato[1][2]==2) {<br />System.out.println("EL JUGADOR 2 HA
+        GANADO");<br />}<br />else if (gato[2][0]==2 &amp;&amp; gato[2][1]==2 &amp;&amp; gato[2][2]==2)
+        {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />}<br />else if (gato[0][0]==2 &amp;&amp; gato[1][0]==2
+        &amp;&amp; gato[2][0]==2) {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />}<br />else if
+        (gato[0][1]==2 &amp;&amp; gato[1][1]==2 &amp;&amp; gato[2][1]==2) {<br />System.out.println("EL JUGADOR 2 HA
+        GANADO");<br />}<br />else if (gato[0][2]==2 &amp;&amp; gato[1][2]==2 &amp;&amp; gato[2][2]==2)
+        {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />}<br />else if (gato[0][0]==2 &amp;&amp; gato[1][1]==2
+        &amp;&amp; gato[2][2]==2) {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />}<br />else if
+        (gato[0][2]==2 &amp;&amp; gato[1][1]==2 &amp;&amp; gato[2][0]==2) {<br />System.out.println("EL JUGADOR 2 HA
+        GANADO");<br />} else{<br />System.out.println("EMPATE");<br />}<br /><br /><br />}
+    </p>
+    <br>
+    <h2>Imagen de como funciona: </h2>
+    <img src="img1.png" alt="">
+    <br>
+    <h1>Esta es la version 2 de mi juego del gato</h1>
+    <br>
+    <p>public class JuegoGatoV2 {</p>
+    <p>public static void main(String[] args) {</p>
+    <p>Scanner sc = new Scanner(System.in);<br />int gato[][];</p>
+    <p>int x = 0;<br />int y = 0;<br />gato = new int[3][3];</p>
+    <p>for (int i = 0; i &lt; 3; i++) {<br />System.out.println("Jugador 1: &iquest;En qu&eacute; posici&oacute;n de x
+        quiere colocar?");<br />x = sc.nextInt();<br />System.out.println("Jugador 1: &iquest;En qu&eacute;
+        posici&oacute;n de y quiere colocar?");<br />y = sc.nextInt();<br />gato[x][y] = 1;<br />System.out.println("");
+    </p>
+    <p>for (int p = 0; p &lt; 3; p++) {<br />for (int j = 0; j &lt; 3; j++) {<br />System.out.print(gato[p][j] + "
+        ");<br />}<br />System.out.println("");<br />}<br />if (gato[0][0] == 1 &amp;&amp; gato[0][1] == 1 &amp;&amp;
+        gato[0][2] == 1) {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />break;<br />} else if (gato[1][0] ==
+        1 &amp;&amp; gato[1][1] == 1 &amp;&amp; gato[1][2] == 1) {<br />System.out.println("EL JUGADOR 1 HA
+        GANADO");<br />break;<br />} else if (gato[2][0] == 1 &amp;&amp; gato[2][1] == 1 &amp;&amp; gato[2][2] == 1)
+        {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />break;<br />} else if (gato[0][0] == 1 &amp;&amp;
+        gato[1][0] == 1 &amp;&amp; gato[2][0] == 1) {<br />System.out.println("EL JUGADOR 1 HA
+        GANADO");<br />break;<br />} else if (gato[0][1] == 1 &amp;&amp; gato[1][1] == 1 &amp;&amp; gato[2][1] == 1)
+        {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />break;<br />} else if (gato[0][2] == 1 &amp;&amp;
+        gato[1][2] == 1 &amp;&amp; gato[2][2] == 1) {<br />System.out.println("EL JUGADOR 1 HA
+        GANADO");<br />break;<br />} else if (gato[0][0] == 1 &amp;&amp; gato[1][1] == 1 &amp;&amp; gato[2][2] == 1)
+        {<br />System.out.println("EL JUGADOR 1 HA GANADO");<br />break;<br />} else if (gato[0][2] == 1 &amp;&amp;
+        gato[1][1] == 1 &amp;&amp; gato[2][0] == 1) {<br />System.out.println("EL JUGADOR 1 HA
+        GANADO");<br />break;<br />}</p>
+    <p>for (int j = 0; j &lt; 1; j++) {<br />System.out.println("Jugador 2: &iquest;En qu&eacute; posici&oacute;n de x
+        quiere colocar?");<br />x = sc.nextInt();<br />System.out.println("Jugador 2: &iquest;En qu&eacute;
+        posici&oacute;n de y quiere colocar?");<br />y = sc.nextInt();<br />gato[x][y] = 2;</p>
+    <p>for (int p = 0; p &lt; 3; p++) {<br />for (int k = 0; k &lt; 3; k++) {<br />System.out.print(gato[p][k] + "
+        ");<br />}<br />System.out.println("");<br />}<br />System.out.println("");<br />if (gato[0][0] == 2 &amp;&amp;
+        gato[0][1] == 2 &amp;&amp; gato[0][2] == 2) {<br />System.out.println("EL JUGADOR 2 HA
+        GANADO");<br />break;<br />} else if (gato[1][0] == 2 &amp;&amp; gato[1][1] == 2 &amp;&amp; gato[1][2] == 2)
+        {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />break;<br />} else if (gato[2][0] == 2 &amp;&amp;
+        gato[2][1] == 2 &amp;&amp; gato[2][2] == 2) {<br />System.out.println("EL JUGADOR 2 HA
+        GANADO");<br />break;<br />} else if (gato[0][0] == 2 &amp;&amp; gato[1][0] == 2 &amp;&amp; gato[2][0] == 2)
+        {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />break;<br />} else if (gato[0][1] == 2 &amp;&amp;
+        gato[1][1] == 2 &amp;&amp; gato[2][1] == 2) {<br />System.out.println("EL JUGADOR 2 HA
+        GANADO");<br />break;<br />} else if (gato[0][2] == 2 &amp;&amp; gato[1][2] == 2 &amp;&amp; gato[2][2] == 2)
+        {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />break;<br />} else if (gato[0][0] == 2 &amp;&amp;
+        gato[1][1] == 2 &amp;&amp; gato[2][2] == 2) {<br />System.out.println("EL JUGADOR 2 HA
+        GANADO");<br />break;<br />} else if (gato[0][2] == 2 &amp;&amp; gato[1][1] == 2 &amp;&amp; gato[2][0] == 2)
+        {<br />System.out.println("EL JUGADOR 2 HA GANADO");<br />break;<br />}<br /><br />for (int k = 0; k &lt; 1;
+        k++) {<br />System.out.println("Jugador 3: &iquest;En qu&eacute; posici&oacute;n de x quiere colocar?");<br />x
+        = sc.nextInt();<br />System.out.println("Jugador 3: &iquest;En qu&eacute; posici&oacute;n de y quiere
+        colocar?");<br />y = sc.nextInt();<br />gato[x][y] = 3;<br /><br />for (int p = 0; p &lt; 3; p++) {<br />for
+        (int l = 0; l &lt; 3; l++) {<br />System.out.print(gato[p][l] + "
+        ");<br />}<br />System.out.println("");<br />}<br />System.out.println("");<br />if (gato[0][0] == 3 &amp;&amp;
+        gato[0][1] == 3 &amp;&amp; gato[0][2] == 3) {<br />System.out.println("EL JUGADOR 3 HA
+        GANADO");<br />break;<br />} else if (gato[1][0] == 3 &amp;&amp; gato[1][1] == 3 &amp;&amp; gato[1][2] == 3)
+        {<br />System.out.println("EL JUGADOR 3 HA GANADO");<br />break;<br />} else if (gato[2][0] == 3 &amp;&amp;
+        gato[2][1] == 3 &amp;&amp; gato[2][2] == 3) {<br />System.out.println("EL JUGADOR 3 HA
+        GANADO");<br />break;<br />} else if (gato[0][0] == 3 &amp;&amp; gato[1][0] == 3 &amp;&amp; gato[2][0] == 3)
+        {<br />System.out.println("EL JUGADOR 3 HA GANADO");<br />break;<br />} else if (gato[0][1] == 3 &amp;&amp;
+        gato[1][1] == 3 &amp;&amp; gato[2][1] == 3) {<br />System.out.println("EL JUGADOR 3 HA
+        GANADO");<br />break;<br />} else if (gato[0][2] == 3 &amp;&amp; gato[1][2] == 3 &amp;&amp; gato[2][2] == 3)
+        {<br />System.out.println("EL JUGADOR 3 HA GANADO");<br />break;<br />} else if (gato[0][0] == 3 &amp;&amp;
+        gato[1][1] == 3 &amp;&amp; gato[2][2] == 3) {<br />System.out.println("EL JUGADOR 3 HA
+        GANADO");<br />break;<br />} else if (gato[0][2] == 3 &amp;&amp; gato[1][1] == 3 &amp;&amp; gato[2][0] == 3)
+        {<br />System.out.println("EL JUGADOR 3 HA GANADO");<br />break;<br />} <br />}<br />}<br />}</p>
+    <p>System.out.println("");</p>
+    <p>for (int i = 0; i &lt; 3; i++) {<br />for (int j = 0; j &lt; 3; j++) {<br />System.out.print(gato[i][j] + "
+        ");<br />}<br />System.out.println("");<br />}</p>
+    <p>}</p>
+    <br>
+    <h2>Imagen de como funciona: </h2>
+    <img src="img2.png" alt="">
+</body>
+
+</html>
